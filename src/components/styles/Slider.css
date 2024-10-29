@@ -1,0 +1,55 @@
+  /* Slider Styling */
+  .slider {
+    display: flex; /* Flexbox for slider layout */
+    flex: 0 0 100%; /* Set slider to take 100% of the container */
+    max-height: 400px; /* Set a maximum height for the slider */
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    display: flex; /* Flex for image and content */
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.slide img {
+    width: 900px; /* Image takes 70% of the slide */
+    height: 550;
+    max-width: 100%; /* Maintain aspect ratio and limit width */
+    max-height: 400px; /* Maintain aspect ratio and limit height */
+    object-fit:contain; /* Cover the area without distorting image */
+    aspect-ratio: auto 900 / 550;
+}
+.slide-content {
+    width: 50%; /* Content takes 30% of the slide */
+    background-color: #364190; /* Dark blue background */
+    color: white;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: 'Petrona', serif; /* Apply Petrona font only to slider content */
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content vertically */
+}
+        .navigation {
+    clear: both; /* Ensures the buttons clear the float and sit below */
+    display: block; /* Ensures buttons are in a block format */
+    text-align: center; /* Centers the buttons below the slider */
+    margin-top: 10px; /* Adds some space between the slider and buttons */
+}
+
+.navigation button {
+    background-color: white; /* Or any other color */
+    border: 1px solid #333; /* Adjust according to your design */
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 5px; /* Space between buttons */
+}
+
+.navigation button:hover {
+    background-color: #f0f0f0; /* Change color on hover */
+}

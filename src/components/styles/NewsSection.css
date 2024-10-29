@@ -1,0 +1,41 @@
+/* NewsSection.css */
+.news-section {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .news-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .news-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .news-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .news-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .news-link {
+    margin-top: 10px;
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .news-link:hover {
+    color: #0056b3;
+  }
+  
